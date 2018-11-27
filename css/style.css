@@ -8,16 +8,16 @@
 	margin: 0 auto;
 }
 
-body {
+
+html, body {
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 150vh;
 	max-width: 1920px;
 	background: url("../img/birdophenia.jpg") center no-repeat;
 	background-size: cover;
 	background-position: 100%;
 	font-family: 'Italianno', cursive;
-	overflow: hidden;
-
+	overflow: auto;
 
 
 }
@@ -42,8 +42,8 @@ body {
 	top: 25%;
 	left: 85%;
 	font-size: 30px;
+
 	color: black;
-	font-weight: bold;
 /*	display: none;*/
 }
 
@@ -62,9 +62,9 @@ aside {
 	height: 39vh;
 	left: -200px;
 	width: 200px;
-	background-color: rgba(136, 142, 104, .7);
+	background-color: rgb(136, 142, 104);
 	transition: .3s linear;
-	z-index: 2;
+
 /*	display: none;*/
 }
 aside a {
@@ -78,6 +78,7 @@ aside a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transform: .3s linear;
+	font-weight: bold;
 
 }
 aside a:hover {
@@ -150,24 +151,24 @@ hr {
 
 .description {
 	width: auto;
-	max-width: 80%;
-	height: 80%;
-	margin: 20px auto;
+	max-width: 95%;
+	height: 70%;
+	margin: 200px auto;
 	background-color: rgba(136, 142, 104, .9);
 	color: black;
-	font-size: 16px;
 	letter-spacing: 1px;
 }
 
 .description p {
 	display: inline-block;
-	margin: 3%;
+	margin: 5%;
+	font-size: 20px;
 }
 
 
 .footer {
 	position: absolute;
-	top: 95%;
+	top: 145%;
 	left: 0;
 	height: 5%;
 	width: 100%;
@@ -191,32 +192,31 @@ hr {
 	margin-top: 147px;
 	max-height: auto;
 	/*SUCESS STYLES*/ }
-	.contactForm .formHeader {
+.contactForm .formHeader {
 		font-size: 15px;
 	  background: rgba(136, 142, 104, 0.3);
 	  border-bottom: 4px solid rgba(113, 118, 87, 0.3);
 	  color: black;;
 	  text-align: center;
 	  overflow: hidden;
-	  text-transform: uppercase;
 	  /*TRANSITION*/
 	  transition: all 0.5s ease; }
-	  .contactForm .formHeader h1 {
+.contactForm .formHeader h1 {
 		line-height: 1em; }
-	.contactForm .formBody {
+.contactForm .formBody {
 	  background: #fff;
 	  padding: 20px 12px;
 	  overflow: hidden;
 	  /*TRANSITION*/
 	  transition: all 0.2s ease; }
-	.contactForm .inputContainer {
+.contactForm .inputContainer {
 	  border: 1px solid #ccc;
 	  border-radius: 3px;
 	  position: relative;
 	  margin-bottom: 5px;
 	  overflow: hidden;
 	  background: transparent; }
-	  .contactForm .inputContainer .message {
+.contactForm .inputContainer .message {
 		color: #FF5C5C;
 		background: #ffb8b8;
 		position: absolute;
@@ -229,16 +229,16 @@ hr {
 		overflow: hidden;
 		/*TRANSITION*/
 		transition: all 0.1s ease; }
-	  .contactForm .inputContainer label,
-	  .contactForm .inputContainer input,
-	  .contactForm .inputContainer textarea {
+.contactForm .inputContainer label,
+.contactForm .inputContainer input,
+.contactForm .inputContainer textarea {
 		box-sizing: border-box;
 		padding: 10px;
 		font-size: 14px;
 		line-height: 1em;
 		border: none;
 		font: inherit; }
-	  .contactForm .inputContainer label {
+.contactForm .inputContainer label {
 		display: inline-block;
 		font-size: .7em;
 		background: #e0e0e0;
@@ -250,15 +250,15 @@ hr {
 		left: 0;
 		top: 0;
 		bottom: 0; }
-	  .contactForm .inputContainer textarea,
-	  .contactForm .inputContainer input {
+.contactForm .inputContainer textarea,
+.contactForm .inputContainer input {
 		width: 100%;
 		max-width: 100%; }
-	  .contactForm .inputContainer textarea {
+.contactForm .inputContainer textarea {
 		margin-bottom: -5px; }
-	  .contactForm .inputContainer input {
+.contactForm .inputContainer input {
 		padding-left: 50px; }
-	.contactForm .submitBtn {
+.contactForm .submitBtn {
 	  background: rgba(136, 142, 104, 0.3);
 	  color: black;
 	  border: none;
@@ -268,57 +268,56 @@ hr {
 	  float: right;
 	  width: auto;
 	  font-weight: bold;
-	  text-transform: uppercase;
 	  /*TRANSITION*/
 	  transition: background 0.5s ease; }
-	  .contactForm .submitBtn:hover {
+.contactForm .submitBtn:hover {
 		background: rgba(190, 199, 146, 0.3); }
-	.contactForm.success {
+.contactForm.success {
 	  overflow: hidden; }
-	  .contactForm.success .formHeader {
+.contactForm.success .formHeader {
 		background: rgba(136, 142, 104, 0.3);
 		border-color: rgba(136, 142, 104, 0.3);
 		font-size: .75em; }
-	  .contactForm.success .formBody {
+.contactForm.success .formBody {
 		height: 0;
 		padding-top: 0;
 		padding-bottom: 0; }
-		.contactForm.success .formBody form {
+.contactForm.success .formBody form {
 		  /*TRANSITION*/
 		  transition: opacity 0.5s ease;
 		  opacity: 0; }
-	.contactForm .inputContainer.success {
+.contactForm .inputContainer.success {
 	  border-color: #76d176; }
-	  .contactForm .inputContainer.success:after {
+.contactForm .inputContainer.success:after {
 		font: 1.25em/2em ;
 		color: #82E682;
 		position: absolute;
 		top: 0;
-		right: 10px;
+		ri		text-align: center;ght: 10px;
 		content: "\f00c"; }
-	  .contactForm .inputContainer.success label {
+.contactForm .inputContainer.success label {
 		background: #82E682;
 		border-color: #76d176; }
-	  .contactForm .inputContainer.success input,
-	  .contactForm .inputContainer.success textarea {
+.contactForm .inputContainer.success input,
+.contactForm .inputContainer.success textarea {
 		color: #0A8754; }
-	.contactForm .inputContainer.error {
+.contactForm .inputContainer.error {
 	  border-color: #e85454; }
-	  .contactForm .inputContainer.error .message {
+.contactForm .inputContainer.error .message {
 		width: 100%; }
-	  .contactForm .inputContainer.error:after {
+.contactForm .inputContainer.error:after {
 		font: 1.25em/2em ;
 		color: #FF5C5C;
 		position: absolute;
 		top: 0;
 		right: 10px;
 		content: "\f00d"; }
-	  .contactForm .inputContainer.error label {
+.contactForm .inputContainer.error label {
 		background: #FF5C5C;
 		border-color: #e85454; }
-	  .contactForm .inputContainer.error input,
+.contactForm .inputContainer.error input,
 	
-	  .contactForm .inputContainer.error textarea {
+.contactForm .inputContainer.error textarea {
 		color: #FF5C5C; }
 
 
@@ -339,7 +338,7 @@ hr {
 	flex-basis: 70%;
 	flex-wrap: wrap;
 	border: 1px solid black;
-	background-color: rgba(136, 142, 104, .7);;
+	background-color: rgba(136, 142, 104, .7);
 	padding: 5px;
 	margin: 5px;
 	text-align: center;
@@ -363,10 +362,36 @@ hr {
 	text-transform: uppercase;
 }
 
+.container_bird {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 125px;
+}
+
+.container_bird .bird {
+	flex-basis: 39%;
+	border: 1px solid black;
+	background-color: rgba(136, 142, 104, .7);
+	margin: 5px;
+
+}
+
+.container_bird .bird h1  {
+	font-size: 22px;
+	text-align: center;
+}
+
+.container_bird .bird h2 {
+	font-size: 18px;
+	text-align: center;
+}
+
 @media (orientation: portrait) and (min-width: 320px) and (max-width: 359px) {
 	body {
 		background-position: 80% center;
-		overflow: hidden;
 		
 	}
 .nav-container {
@@ -381,10 +406,14 @@ hr {
 }
 
 	.nav-mobile {
-
-	top: 110%;
-	left: 85%;
-	font-size: 26px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
 	color: black;
 }
 aside {
@@ -397,6 +426,14 @@ aside {
 	.footer span, p {
 		margin: 0 5px;
 	}
+	.contactForm {
+		margin-top: 100px;
+	}
+
+	.description {
+		margin-top: 70px;
+	}
+
 }
 
 
@@ -420,11 +457,9 @@ aside {
 aside {
 	top: 130%;
 	height: 45vh;
-
-
-}
+}	
 	.footer {
-		top: 95%;
+		top: 145%;
 	}
 
 	.footer span, p {
@@ -432,7 +467,15 @@ aside {
 	}
 	.description {
 		margin-top: 21%;
-		font-size: 18px;
+		font-size: 20px;
+	}
+
+	.container_bird .bird h1  {
+		font-size: 24px;
+	}
+	
+	.container_bird .bird h2 {
+		font-size: 20px;
 	}
 }
 
@@ -455,7 +498,7 @@ aside {
 }
 
     .footer {
-		top: 95%;
+		top: 145%;
 	}
 	.footer {
 
@@ -466,7 +509,8 @@ aside {
 		font-size: 19px;
 	}
 	.categories div.item {
-		font-size: 30px;
+		flex-basis: 80%;
+		font-size: 32px;
 	}
 }
 
@@ -498,7 +542,7 @@ aside {
 	}
 
 	.footer {
-		top: 95%;
+		top: 145%;
 	}
 
 	.footer {
@@ -513,49 +557,6 @@ aside {
 
 	.categories div.item {
 		font-size: 32px;
-	}
-}
-
-@media (orientation: landscape) and (min-width: 550px) and (max-width: 620px) {
-	body {
-		overflow: auto
-	}
-	.nav-container h1 {
-	text-align: center;	position: relative;
-	font-size: 28px;
-	margin: 5px 10px;
-	}
-
-	.nav-container {
-	top: 2vh;
-	/* height: 25%; */
-
-}
-		.nav-mobile {
-
-	top: 125%;
-	left: 90%;
-}
-	aside {
-
-		top: 120%;
-		height: 60vh;
-
-		width: 120px;
-}
-
-aside a {
-			font-size: 16px;
-			margin: 8px;
-}
-
-	.footer {
-	top: 95%;
-	font-size: 18px;
-	}
-	.description {
-		margin-top: 12%;
-		font-size: 16px;
 	}
 }
 
@@ -809,11 +810,13 @@ aside a {
 		margin-top: 100px;
 		height: auto;
 	}
+	aside {
+		height: 270px;
+	}
 
 	.footer {
 	text-align: left;
-	top: 139%;
-	width: 103vw;
+	top: 144%;
 	font-size: 21px;
 	padding: 0 15px;
 	}
@@ -825,9 +828,6 @@ aside a {
 }
 
 @media (orientation: landscape) and (min-width: 731px) and (max-width: 810px) {
-	body {
-		height: 150vh;
-	}
 
 	.contactForm {
 		margin-top: 100px;
@@ -836,7 +836,7 @@ aside a {
 
 	.footer {
 	text-align: left;
-	top: 95%;
+	top: 145%;
 	width: 103vw;
 	font-size: 21px;
 	padding: 0 15px;
@@ -858,13 +858,9 @@ aside a {
 
 
 
-@media (orientation: landscape) and (min-width: 811px) and (max-width: 1320px) {
-	body {
-		height: 150vh;
-	}
+@media (orientation: landscape) and (min-width: 811px) and (max-width: 1023px) {
 
 	.nav-container {
-	width: 103vw;
 	height: 25vh;
 }
 	.nav-container h1 {
@@ -888,7 +884,7 @@ aside a {
 	.nav-container ul li {
     width: 25%;
     float: left;
-    text-align: center;
+	text-align: center;
 }
 
 	.nav-container ul li a {
@@ -896,13 +892,12 @@ aside a {
     display: block;
 	}
 	.contactForm {
-		margin-top: 200px;
+		margin-top: 18%;
 	}
 
 	.footer {
 	text-align: left;
-	top: 95%;
-	width: 103vw;
+	top: 144%;
 	font-size: 21px;
 	padding: 0 15px;
 	}
@@ -928,11 +923,16 @@ aside a {
 		width: 25%;
 	}
 	.description {
-		margin-top: 35%;
-		font-size: 24px;
+		margin-top: 20%;
+	}
+
+	.description p {
+		font-size: 22px;
+		margin: 1%;
 	}
 
 	.categories {
+		margin-top: 12%;
 		flex-direction: row;
 		font-size: 35px;
 		width: 80%;
@@ -946,20 +946,8 @@ aside a {
 }
 
 
-@media (orientation: landscape) and (min-width: 1320px) and (max-width: 1410px) {
-	body {
-		max-height: 100%;
-		width: 100%;
-		overflow: hidden;
-
-	}
-	.wrapper{
-		max-width: 100%;
-		max-height: 100%;
-	}
-
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1365px) {
 	.nav-container {
-	width: 100%;
 	height: 18vh;
 }
 	.nav-container h1 {
@@ -996,8 +984,7 @@ aside a {
 
 	.footer {
 	text-align: left;
-	top: 95vh;
-	width: 100%;
+	top: 148%;
 	font-size: 21px;
 	padding: 0 15px;
 
@@ -1028,16 +1015,15 @@ aside a {
 		margin: auto;
 		max-width: 450px;
 		padding: 25px;
-		margin-top: 23vh;
 		height: auto;
-		max-height: 20%;
+		max-height: 40%;
 		z-index: 2;
 	}
 	.description {
-		margin-top: 12%;
-		font-size: 26px;
+		margin-top: 30%;
 	}
 	.description p {
+		font-size: 30px;
 		margin: 2%;
 	}
 	.categories {
@@ -1045,27 +1031,24 @@ aside a {
 		font-size: 35px;
 		width: 80%;
 		justify-content: space-between;
+		margin-top: 20%;
 	}
 
 	.categores div.item {
 		flex-basis: 80%;
 	}
 
+	.footer {
+		top: 145%;
+	}
+
 }
-@media (orientation: landscape) and (min-width: 1411px) and (max-width: 1920px) {
-	body {
-		max-height: 100%;
-		width: 100%;
-		overflow: hidden;
-
-	}
-	.wrapper{
-		max-width: 100%;
-		max-height: 100%;
-	}
-
-	.nav-container {
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1920px) {
+html, body {
 	width: 100%;
+	height: 100%;
+}
+	.nav-container {
 	height: 18vh;
 }
 	.nav-container h1 {
@@ -1102,9 +1085,8 @@ aside a {
 
 	.footer {
 	text-align: left;
-	top: 95vh;
-	width: 100%;
-	font-size: 21px;
+	top: 145%;
+	font-size: 22px;
 	padding: 0 15px;
 
 	}
@@ -1134,20 +1116,26 @@ aside a {
 		margin: auto;
 		max-width: 450px;
 		padding: 25px;
-		margin-top: 23vh;
+		margin-top: 22%;
 		height: auto;
-		max-height: 20%;
+		max-height: 50%;
 		z-index: 2;
 	}
+
 	.description {
-		margin-top: 15%;
-		font-size: 28px;
+		margin-top: 25%;
+	}
+
+	.description p {
+		font-size: 32px;
+		margin: 2%;
 	}
 	.categories {
 		flex-direction: row;
 		font-size: 35px;
 		width: 80%;
 		justify-content: space-between;
+		margin-top: 
 	}
 
 	.categores div.item {
