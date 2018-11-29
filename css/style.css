@@ -13,9 +13,9 @@ html, body {
 	width: 100vw;
 	min-height: 150vh;
 	max-width: 1920px;
-	background: url("../img/birdophenia.jpg") center no-repeat;
+	background: url("../img/birdophenia_small.jpg") center no-repeat fixed;
 	background-size: cover;
-	background-position: 100%;
+	background-position: 80% 50%;
 	font-family: 'Italianno', cursive;
 	overflow: auto;
 
@@ -75,7 +75,6 @@ aside a {
 	font-size: 22px;
 	margin: 20px 10px;
 	padding: 10px;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	transform: .3s linear;
 	font-weight: bold;
@@ -90,6 +89,7 @@ aside.show {
 	left: 0;
 }
 .nav-container h1 {
+
 
 	text-align: center;
 	font-size: 26px;
@@ -112,7 +112,6 @@ aside.show {
 	display: block;
     font-size: 20px;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
     color: black;
@@ -383,7 +382,7 @@ hr {
 	border: 1px solid black;
 	background-color: rgba(136, 142, 104, .7);
 	margin: 5px;
-	transition: .3s ease-in;
+	transition: .3s ease-in;	
 
 }
 .container_bird .bird:hover {
@@ -403,6 +402,20 @@ hr {
 .container_bird .bird h2 {
 	font-size: 18px;
 	text-align: center;
+}
+
+.container_bird_item {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.container_bird_item .bird_item  {
+	flex-basis: 15%;
+	height: 80%;
 }
 
 @media (orientation: portrait) and (min-width: 320px) and (max-width: 359px) {
@@ -651,6 +664,14 @@ aside a {
 	.container_bird .bird a h1,h2 {
 		font-size: 34px;
 	}
+	.container_bird_item {
+		justify-content: space-between;
+		margin: 150px 15px 50px 15px;
+	}
+	
+	.container_bird_item .bird_item  {
+		flex-basis: 30%;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 768px) and (max-width: 811px) {
@@ -701,8 +722,23 @@ aside a {
 	.container_bird .bird a h1,h2 {
 		font-size: 36px;
 	}
+	.container_bird_item{
+		margin-top: 15%;
+		justify-content: space-around;;
+	}
+	.container_bird_item .bird_item img  {
+		flex-basis: 15%;
+		height: 80%;
+		margin: 10px;
+	}
+	.container_bird_item {
+
+		justify-content: space-between;
+		margin: 200px 15px 100px 15px;
+	}
+
 }
-}
+
 
 @media (orientation: portrait) and (min-width: 811px) and (max-width: 1023px) {
 	.nav-container h1 {
@@ -748,6 +784,12 @@ aside a {
 	.container_bird {
 		margin-top: 30%;
 	}
+
+	.container_bird_item {
+
+		justify-content: space-between;
+		margin: 200px 15px 100px 15px;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 1024px) and (max-width: 1366px) {
@@ -778,7 +820,7 @@ aside a {
 }
 
 	.nav-container ul li a {
-    font-size: 20px;
+    font-size: 28px;
     display: block;
 	}
 
@@ -840,6 +882,17 @@ aside a {
 		font-size: 40px;
 	}
 
+	.container_bird_item {
+
+		align-content: flex-start;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin: 30% 30px 100px 30px;
+	}
+	
+	.container_bird_item .bird_item  {
+		flex-basis: 20%;
+	}
 }
 
 @media (orientation: landscape) and (min-width: 568px) and (max-width: 730px) {
@@ -876,7 +929,10 @@ aside a {
 	.container_bird .bird a h1,h2 {
 		font-size: 20px;
 	}
-
+	.container_bird_item {
+		margin-top: 80px;
+	}
+	
 }
 
 @media (orientation: landscape) and (min-width: 731px) and (max-width: 810px) {
@@ -942,7 +998,7 @@ aside a {
 }
 
 	.nav-container ul li a {
-    font-size: 20px;
+    font-size: 25px;
     display: block;
 	}
 	.contactForm {
@@ -1007,6 +1063,17 @@ aside a {
 		font-size: 25px;
 	}
 
+	.container_bird_item {
+		align-items: flex-start;
+		justify-content: space-around;
+		margin-top: 20%;
+	}
+	
+	.container_bird_item .bird_item  {
+		flex-basis: 15%;
+		height: 80%;
+	}
+
 }
 
 
@@ -1042,7 +1109,7 @@ aside a {
 }
 
 	.nav-container ul li a {
-    font-size: 20px;
+    font-size: 27px;
     display: block;
 	}
 
@@ -1115,12 +1182,19 @@ aside a {
 	.container_bird .bird a h1, h2 {
 		font-size: 27px;
 	}
+	.container_bird_item {
+		margin-top: 20%;
+	}
+
 
 }
 @media (orientation: landscape) and (min-width: 1366px) and (max-width: 1920px) {
 html, body {
 	width: 100%;
 	overflow: auto;
+	background: url('../img/birdophenia_large.jpg') no-repeat;
+	background-position: 100% 100%;
+
 }
 	.nav-container {
 	height: 18vh;
@@ -1153,7 +1227,7 @@ html, body {
 }
 
 	.nav-container ul li a {
-    font-size: 20px;
+    font-size: 28px;
     display: block;
 	}
 
@@ -1224,6 +1298,20 @@ html, body {
 	}
 	.container_bird .bird a h1, h2 {
 		font-size: 27px;
+	}
+
+	.container_bird_item {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 20%;
+	}
+	
+	.container_bird_item .bird_item  {
+		flex-basis: 10%;
+		height: 80%;
+		padding: 5px;
 	}
 
 }
