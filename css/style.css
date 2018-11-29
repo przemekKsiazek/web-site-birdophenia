@@ -214,7 +214,8 @@ hr {
 	  position: relative;
 	  margin-bottom: 5px;
 	  overflow: hidden;
-	  background: transparent; }
+	  background: transparent;
+	font-size: 18px; }
 .contactForm .inputContainer .message {
 		color: #FF5C5C;
 		background: #ffb8b8;
@@ -233,7 +234,7 @@ hr {
 .contactForm .inputContainer textarea {
 		box-sizing: border-box;
 		padding: 10px;
-		font-size: 14px;
+		font-size: 20px;
 		line-height: 1em;
 		border: none;
 		font: inherit; }
@@ -292,7 +293,8 @@ hr {
 		color: #82E682;
 		position: absolute;
 		top: 0;
-		ri		text-align: center;ght: 10px;
+		right: 10px;	
+		text-align: center;
 		content: "\f00c"; }
 .contactForm .inputContainer.success label {
 		background: #82E682;
@@ -318,6 +320,7 @@ hr {
 	
 .contactForm .inputContainer.error textarea {
 		color: #FF5C5C; }
+		
 
 
 .categories {
@@ -1186,6 +1189,10 @@ aside a {
 		margin-top: 20%;
 	}
 
+	.contactForm .inputContainer {
+	  font-size: 22px; 
+	}
+
 
 }
 @media (orientation: landscape) and (min-width: 1366px) and (max-width: 1920px) {
@@ -1313,6 +1320,12 @@ html, body {
 		height: 80%;
 		padding: 5px;
 	}
+
+	.contactForm .inputContainer {
+		font-size: 22px; 
+	  }
+  
+  
 
 }
 
