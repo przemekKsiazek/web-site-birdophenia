@@ -306,7 +306,7 @@ hr {
 		border-color: #76d176; }
 .contactForm .inputContainer.success input,
 .contactForm .inputContainer.success textarea {
-		color: #0A8754; }
+		color: black; }
 .contactForm .inputContainer.error {
 	  border-color: #e85454; }
 .contactForm .inputContainer.error .message {
