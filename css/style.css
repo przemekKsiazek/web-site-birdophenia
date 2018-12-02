@@ -432,6 +432,42 @@ hr {
 	height: 80%;
 }
 
+.new_site {
+	position: absolute;
+	top: 130%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+
+.new_site div {
+	width: 30px;
+	height: 30px;
+	background-color: rgba(136, 142, 104, .8);
+	margin: 10px;
+	text-align: center;
+	border: 1px solid black;
+
+
+}
+
+.new_site div a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.new_site div:hover {
+	border: 2px solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px;
+	text-shadow: 1px 1px 2px #427388; 
+}
+
 @media (orientation: portrait) and (min-width: 320px) and (max-width: 359px) {
 	body {
 		background-position: 80% center;
@@ -1232,8 +1268,8 @@ aside a {
 html, body {
 	width: 100%;
 	overflow: auto;
-	background: url('../img/birdophenia_large.jpg') no-repeat;
-	background-position: 100% 100%;
+	background: url('../img/birdophenia1.jpg') no-repeat center; 
+	background-position: 92% 100%;
 
 }
 	.nav-container {
@@ -1340,7 +1376,7 @@ html, body {
 		flex-basis: 30%;
 	}
 	.container_bird .bird a h1, h2 {
-		font-size: 28px;
+		font-size: 30px;
 	}
 
 	.container_bird_item {
