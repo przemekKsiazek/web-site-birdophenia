@@ -64,6 +64,7 @@ aside {
 	width: 200px;
 	background-color: rgb(136, 142, 104);
 	transition: .3s linear;
+	z-index: 1;
 
 /*	display: none;*/
 }
@@ -78,6 +79,7 @@ aside a {
 	letter-spacing: 1px;
 	transform: .3s linear;
 	font-weight: bold;
+	z-index: 1;
 
 }
 aside a:hover {
@@ -160,7 +162,7 @@ hr {
 
 .description p {
 	display: inline-block;
-	margin: 5%;
+	margin: 3%;
 	font-size: 20px;
 }
 
@@ -192,9 +194,9 @@ hr {
 	max-height: auto;
 	/*SUCESS STYLES*/ }
 .contactForm .formHeader {
-		font-size: 15px;
-	  background: rgba(136, 142, 104, 0.3);
-	  border-bottom: 4px solid rgba(113, 118, 87, 0.3);
+	font-size: 15px;
+	  background: rgba(136, 142, 104, 0.4);
+	  border-bottom: 4px solid rgba(113, 118, 87, 0.4);
 	  color: black;;
 	  text-align: center;
 	  overflow: hidden;
@@ -203,7 +205,7 @@ hr {
 .contactForm .formHeader h1 {
 		line-height: 1em; }
 .contactForm .formBody {
-	  background: #fff;
+	  background: rgba(113, 118, 87, 0.4);
 	  padding: 20px 12px;
 	  overflow: hidden;
 	  /*TRANSITION*/
@@ -215,7 +217,9 @@ hr {
 	  margin-bottom: 5px;
 	  overflow: hidden;
 	  background: transparent;
-	font-size: 18px; }
+	font-size: 18px; 
+	color: black;
+}
 .contactForm .inputContainer .message {
 		color: #FF5C5C;
 		background: #ffb8b8;
@@ -242,7 +246,7 @@ hr {
 		display: inline-block;
 		font-size: .7em;
 		background: #e0e0e0;
-		color: rgba(0, 0, 0, 0.3);
+		color: rgb(0, 0, 0,);
 		line-height: 1.75em;
 		border-right: 1px solid #ccc;
 		/*POSITION*/
@@ -259,7 +263,7 @@ hr {
 .contactForm .inputContainer input {
 		padding-left: 50px; }
 .contactForm .submitBtn {
-	  background: rgba(136, 142, 104, 0.3);
+	  background: #e0e0e0;
 	  color: black;
 	  border: none;
 	  border-radius: 3px;
@@ -268,15 +272,16 @@ hr {
 	  float: right;
 	  width: auto;
 	  font-weight: bold;
+	  border: 1px solid black;
 	  /*TRANSITION*/
 	  transition: background 0.5s ease; }
 .contactForm .submitBtn:hover {
-		background: rgba(190, 199, 146, 0.3); }
+		background: rgba(190, 199, 146, 0.4); }
 .contactForm.success {
 	  overflow: hidden; }
 .contactForm.success .formHeader {
-		background: rgba(136, 142, 104, 0.3);
-		border-color: rgba(136, 142, 104, 0.3);
+		background: rgba(136, 142, 104, 0.4);
+		border-color: rgba(136, 142, 104, 0.4);
 		font-size: .75em; }
 .contactForm.success .formBody {
 		height: 0;
@@ -320,7 +325,16 @@ hr {
 	
 .contactForm .inputContainer.error textarea {
 		color: #FF5C5C; }
-		
+
+.contactForm .old_paper {
+	background: url('../img/Old_paper.jpg');
+	color: black;
+}
+
+
+.contactForm .old_paper::placeholder {
+	color: black;
+}
 
 
 .categories {
@@ -1283,7 +1297,7 @@ html, body {
 
 	.description p {
 		font-size: 30px;
-		margin: 1%;
+		margin: .6%;
 	}
 	.categories {
 		flex-direction: row;
@@ -1304,7 +1318,7 @@ html, body {
 		flex-basis: 30%;
 	}
 	.container_bird .bird a h1, h2 {
-		font-size: 27px;
+		font-size: 28px;
 	}
 
 	.container_bird_item {
