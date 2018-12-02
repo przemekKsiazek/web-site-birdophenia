@@ -13,9 +13,9 @@ html, body {
 	width: 100vw;
 	min-height: 150vh;
 	max-width: 1920px;
-	background: url("../img/birdophenia_small.jpg") center no-repeat fixed;
-	background-size: cover;
-	background-position: 80% 50%;
+	background: url("../img/birdophenia_mobil.jpg") no-repeat fixed;
+	background-size: 100% 100%;
+	/* background-position: 30% 50%; */
 	font-family: 'Italianno', cursive;
 	overflow: auto;
 
@@ -606,7 +606,10 @@ aside {
 }
 
 @media (orientation: landscape) and (min-width: 621px) and (max-width: 800px) {
-	body {
+	html,body {
+		background: url('../img/birdophenia_large.jpg') no-repeat;
+		background-size: cover;
+		background-position: 90% 100%;
 		overflow: auto;
 	}
 	.nav-container h1 {
@@ -910,7 +913,11 @@ aside a {
 }
 
 @media (orientation: landscape) and (min-width: 568px) and (max-width: 730px) {
-
+	html,body {
+		background: url('../img/birdophenia_large.jpg') no-repeat;
+		background-size: cover;
+		background-position: 90% 100%;
+	}
 
 	.contactForm {
 		margin-top: 65px;
@@ -950,7 +957,12 @@ aside a {
 }
 
 @media (orientation: landscape) and (min-width: 731px) and (max-width: 810px) {
-
+	
+	html,body {
+		background: url('../img/birdophenia_large.jpg') no-repeat;
+		background-size: cover;
+		background-position: 90% 100%;
+	}
 	.contactForm {
 		margin-top: 100px;
 		height: auto;
@@ -984,6 +996,11 @@ aside a {
 
 @media (orientation: landscape) and (min-width: 811px) and (max-width: 1023px) {
 
+	html,body {
+		background: url('../img/birdophenia_large.jpg') no-repeat;
+		background-size: cover;
+		background-position: 90% 100%;
+	}
 	.nav-container {
 	height: 25vh;
 }
@@ -1092,6 +1109,11 @@ aside a {
 
 
 @media (orientation: landscape) and (min-width: 1024px) and (max-width: 1365px) {
+	html,body {
+		background: url('../img/birdophenia_large.jpg') no-repeat;
+		background-size: cover;
+		background-position: 100% 100%;
+	}
 	.nav-container {
 	height: 18vh;
 }
