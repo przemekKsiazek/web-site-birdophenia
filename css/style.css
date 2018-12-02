@@ -700,7 +700,7 @@ aside a {
 }
 		.nav-mobile {
 
-	top: 125%;
+	top: 15%;
 	left: 85%;
 }
 	aside {
@@ -966,7 +966,7 @@ aside a {
 	}
 	.footer {
 	text-align: left;
-	top: 144%;
+	top: 145%;
 	font-size: 21px;
 	padding: 0 15px;
 	}
@@ -981,7 +981,7 @@ aside a {
 
 	.container_bird {
 		margin-top: 7%;
-		flex-basis: 10%;
+		flex-basis: 50%;
 	}
 	.container_bird .bird a h1,h2 {
 		font-size: 20px;
