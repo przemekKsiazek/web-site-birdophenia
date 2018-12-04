@@ -14,9 +14,9 @@ html, body {
 	min-height: 150vh;
 	max-width: 1920px;
 	background-image: url("../img/birdophenia_mobil_large.jpg");
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	font-family: 'Italianno', cursive;
 	overflow: auto;
 
