@@ -11,7 +11,7 @@
 
 html, body {
 	width: 100vw;
-	min-height: 150vh;
+	max-height: 150vh;
 	max-width: 1920px;
 	background-image: url("../img/birdophenia_mobil_large.jpg");
 	background-size: 100% 100%;
@@ -1265,12 +1265,13 @@ aside a {
 
 
 }
-@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1920px) {
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1649px) {
 html, body {
 	width: 100%;
 	overflow: auto;
-	background: url('../img/birdophenia_large.jpg') no-repeat center; 
-	background-position: 92% 87%;
+	background: url('../img/birdophenia_large.jpg') no-repeat fixed;
+	background-size: cover;
+	background-position: 10% 90%;
 
 }
 	.nav-container {
@@ -1397,9 +1398,146 @@ html, body {
 	.contactForm .inputContainer {
 		font-size: 22px; 
 	  }
-  
-  
 
 }
+
+
+@media (orientation: landscape) and (min-width: 1649px) and (max-width: 1920px) {
+	html, body {
+		overflow: auto;
+		background: url('../img/birdophenia_large.jpg') no-repeat fixed;
+		background-size: cover;
+		background-position: 10% 90%;
+	
+	}
+		.nav-container {
+		height: 18vh;
+	}
+		.nav-container h1 {
+		display: inline-block;
+		font-size: 2px;
+		float: left;
+		padding: 24px;
+		text-align: left;
+		}
+		.logo {
+		margin: 10px 5px;
+		text-align: left;
+		width: 40%;
+	
+		}
+		.nav-container ul {
+			display: inline-block;
+			width: 50%;
+			list-style: none;
+			margin-top: 12px;
+			margin-left: 140px;
+	
+		}
+		.nav-container ul li {
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	
+		.nav-container ul li a {
+		font-size: 28px;
+		display: block;
+		}
+	
+		.footer {
+		text-align: left;
+		top: 145%;
+		font-size: 22px;
+		padding: 0 15px;
+	
+		}
+	
+		.nav-mobile {
+			display: none;
+		}
+	
+		.two:hover ~ hr {
+	  margin-left: 25%;
+	}
+	
+	.three:hover ~ hr {
+	  margin-left: 50%;
+	}
+	
+	.four:hover ~ hr {
+	  margin-left: 75%;
+	}
+	
+		hr {
+			display: block;
+			width: 25%;
+		}
+		.contactForm {
+			border-radius: 4px;
+			margin: auto;
+			max-width: 450px;
+			padding: 25px;
+			margin-top: 22%;
+			height: auto;
+			max-height: 50%;
+			z-index: 2;
+		}
+	
+		.description {
+			margin-top: 25%;
+		}
+	
+		.description p {
+			font-size: 30px;
+			margin: .6%;
+		}
+		.categories {
+			flex-direction: row;
+			font-size: 35px;
+			width: 80%;
+			justify-content: space-between;
+			margin-top: 20%;
+		}
+	
+		.categores div.item {
+			flex-basis: 80%;
+		}
+	
+		.categories div a {
+			font-size: 32px;
+		}
+		.container_bird {
+			margin-top: 20%;
+		}
+		.container_bird .bird{
+			flex-basis: 30%;
+		}
+		.container_bird .bird a h1, h2 {
+			font-size: 30px;
+		}
+	
+		.container_bird_item {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-top: 20%;
+		}
+		
+		.container_bird_item .bird_item  {
+			flex-basis: 10%;
+			height: 80%;
+			padding: 5px;
+		}
+	
+		.contactForm .inputContainer {
+			font-size: 22px; 
+		  }
+	
+	}
+	
+	
+
 
 
