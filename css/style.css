@@ -111,7 +111,8 @@ aside.show {
 
 .nav-container ul li {
 
-    margin: 20px 0;
+	margin: 20px 0;
+	transition: 0.5s ease;
 }
 
 .nav-container ul li a {
@@ -123,32 +124,65 @@ aside.show {
     color: black;
     cursor: pointer;
     display: none;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
+
 }
 
-.two:hover ~ hr {
-  margin-left: 10%;
+.menu-hover-lines {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
 }
 
-.three:hover ~ hr {
-  margin-left: 21%;
+.menu-hover-lines li a {
+  padding: 0.75rem 0;
+  position: relative;
+  margin-left: 1rem;
 }
 
-.four:hover ~ hr {
-  margin-left: 31%;
+.menu-hover-lines li:first-child a {
+  margin-left: 0;
 }
 
-hr {
-  height: .25rem;
-  width: 10%;
-  margin: 0 ;
-  background: black;
-  border: none;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  display: none;
+.menu-hover-lines li.active > a {
+  background-color: transparent;
 }
+
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: black;
+  width: 0;
+}
+
+.menu-hover-lines a::before {
+  top: 0;
+  left: 0;
+}
+
+.menu-hover-lines a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.menu-hover-lines a:hover,
+.menu-hover-lines li.active > a {
+  color: #0a0a0a;
+  transition: all 0.35s ease;
+}
+
+.menu-hover-lines a:hover::before,
+.menu-hover-lines .active a::before,
+.menu-hover-lines a:hover::after,
+.menu-hover-lines .active a::after {
+  width: 100%;
+}
+
+
+
 
 .clearfix::after {
     content: "";
@@ -338,26 +372,6 @@ hr {
 .contactForm .inputContainer.error textarea {
 		color: #FF5C5C; }
 
-.contactForm .old_paper {
-	background: rgba(136, 142, 104, 0.9);
-}
-
-
-.contactForm .old_paper::-webkit-input-placeholder {
-	color: black;
-}
-
-
-.contactForm .old_paper:-ms-input-placeholder {
-	color: black;
-}
-
-
-.contactForm .old_paper::placeholder {
-	color: black;
-}
-
-
 .categories {
 	position: absolute;
 	top: 40%;
@@ -377,7 +391,24 @@ hr {
 
 }
 
+.contactForm .old_paper {
+	background: rgba(136, 142, 104, 0.9);
+}
 
+
+.contactForm .old_paper::-webkit-input-placeholder {
+	color: black;
+}
+
+
+.contactForm .old_paper:-ms-input-placeholder {
+	color: black;
+}
+
+
+.contactForm .old_paper::placeholder {
+	color: black;
+}
 .categories div.item {
 	width: 100%;
 	-ms-flex-preferred-size: 70%;
@@ -974,22 +1005,6 @@ aside a {
 		display: none;
 	}
 
-	.two:hover ~ hr {
-  margin-left: 25%;
-}
-
-.three:hover ~ hr {
-  margin-left: 50%;
-}
-
-.four:hover ~ hr {
-  margin-left: 100%;
-}
-
-	hr {
-		display: block;
-		width: 25%;
-	}
 	.contactForm {
 		margin-top: 250px;;
 	}
@@ -1188,23 +1203,6 @@ aside a {
 	.nav-mobile {
 		display: none;
 	}
-
-	.two:hover ~ hr {
-  margin-left: 25%;
-}
-
-.three:hover ~ hr {
-  margin-left: 50%;
-}
-
-.four:hover ~ hr {
-  margin-left: 75%;
-}
-
-	hr {
-		display: block;
-		width: 25%;
-	}
 	.description {
 		margin-top: 18%;
 	}
@@ -1314,22 +1312,6 @@ aside a {
 		display: none;
 	}
 
-	.two:hover ~ hr {
-  margin-left: 25%;
-}
-
-.three:hover ~ hr {
-  margin-left: 50%;
-}
-
-.four:hover ~ hr {
-  margin-left: 75%;
-}
-
-	hr {
-		display: block;
-		width: 25%;
-	}
 	.contactForm {
 		border-radius: 4px;
 		margin: 20% auto auto;
@@ -1444,22 +1426,7 @@ html, body {
 		display: none;
 	}
 
-	.two:hover ~ hr {
-  margin-left: 25%;
-}
 
-.three:hover ~ hr {
-  margin-left: 50%;
-}
-
-.four:hover ~ hr {
-  margin-left: 75%;
-}
-
-	hr {
-		display: block;
-		width: 25%;
-	}
 	.contactForm {
 		border-radius: 4px;
 		margin: auto;
@@ -1593,23 +1560,7 @@ html, body {
 		.nav-mobile {
 			display: none;
 		}
-	
-		.two:hover ~ hr {
-	  margin-left: 25%;
-	}
-	
-	.three:hover ~ hr {
-	  margin-left: 50%;
-	}
-	
-	.four:hover ~ hr {
-	  margin-left: 75%;
-	}
-	
-		hr {
-			display: block;
-			width: 25%;
-		}
+
 		.contactForm {
 			border-radius: 4px;
 			margin: auto;
