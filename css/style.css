@@ -11,9 +11,8 @@
 
 
 html, body {
-	width: 100%;
-	height: 100%;
-	max-height: 150%;
+	width: 100vw;
+	min-height: 150vh;
 	max-width: 1920px;
 	background-image: url("../img/birdophenia_mobil_large.jpg");
 	background-position: center top;
